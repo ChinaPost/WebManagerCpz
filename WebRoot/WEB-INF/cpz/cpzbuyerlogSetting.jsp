@@ -74,7 +74,7 @@ $(document).on('ready', function() {
 			return false;
 		}
 		if ($("#latvalue").val() == "") {
-			alert("请输入操作纬度！");
+			alert("请输入操作纬度！");
 			return false;
 		}
 		 myForm.submit();

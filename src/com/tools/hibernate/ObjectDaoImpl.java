@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+//import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -474,6 +475,7 @@ public List findByHqlPage(final  String hql, final Map<String, Object> argsMap,f
 //	
 //	return list;
 //}
+
 
 /*
  * 使用参数绑定查询原生SQL语句分页查询

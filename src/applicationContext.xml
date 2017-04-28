@@ -60,8 +60,8 @@
 	<!--JDBC事务管理器,根据你的情况使用不同的事务管理器,如果工程中有Hibernate,就用Hibernate的事务管理器 -->
 	<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource">
-			<ref local="dataSource" />
+		<property name="dataSource" ref="dataSource">
+			
 		</property>
 	</bean>
 

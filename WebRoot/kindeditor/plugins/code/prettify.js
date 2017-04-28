@@ -63,7 +63,7 @@ window.PR_SHOULD_USE_CONTINUATION = !0;
 			else if (/[a-z]/i.test(g.source.replace(/\\u[\da-f]{4}|\\x[\da-f]{2}|\\[^UXux]/gi, ""))) {
 				s = !0;
 				l = !1;
-				break
+				break;
 			}
 		}
 		for (var r = {
@@ -453,7 +453,8 @@ window.PR_SHOULD_USE_CONTINUATION = !0;
 						f, b;
 					if (b = !k) {
 						b = n;
-						for (var o = void 0, c = b.firstChild; c; c = c.nextSibling) var i = c.nodeType,
+						for (var o = void 0, c = b.firstChild; c; c = c.nextSibling)
+							var i = c.nodeType,
 							o = i === 1 ? o ? b : c : i === 3 ? N.test(c.nodeValue) ? b : o : o;
 						b = (f = o === b ? void 0 : o) && "CODE" === f.tagName
 					}
