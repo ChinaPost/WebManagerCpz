@@ -26,10 +26,10 @@
 			value="com.mysql.jdbc.Driver">
 		</property>
 		<property name="url"
-			value="jdbc:mysql://120.76.232.114:3306/cpz">
+			value="jdbc:mysql://120.76.232.114:3306/gspdb">
 		</property>
-		<property name="username" value="root"></property>
-		<property name="password" value="root"></property>
+		<property name="username" value="gsp"></property>
+		<property name="password" value="123456"></property>
 	</bean>
 
 	<!-- sessionFactory -->
