@@ -41,19 +41,10 @@ import org.apache.struts2.convention.annotation.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.chinapost.tools.CommonFunction;
-import com.chinapost.weixin.activity.model.custmInfo;
-import com.chinapost.weixin.common.ExportExcel;
-import com.chinapost.weixin.common.KeyValue;
-import com.chinapost.weixin.model.ActivityInfo;
-import com.chinapost.weixin.model.VoteSummaryVo;
-import com.chinapost.weixin.model.WxPara;
-import com.chinapost.weixin.model.WxParaIds;
-import com.chinapost.weixin.service.ActivityService;
-import com.chinapost.weixin.util.page.PaginationUtil;
-import com.forgon.tools.StrutsParamUtils;
-import com.forgon.tools.hibernate.ObjectDao;
+
+
 import com.google.gson.Gson;
+import com.tools.hibernate.ObjectDao;
 
 @SuppressWarnings("unchecked")
 @ParentPackage(value = "default")
@@ -67,7 +58,7 @@ public class ToExcelAction {
 	@Resource
 	private ObjectDao objectDao;
 
-	private ActivityService activityService;
+
 
 	List listcolumn = null;
 	List listquerycolumn = null;
@@ -81,13 +72,7 @@ public class ToExcelAction {
 		this.objectDao = objectDao;
 	}
 
-	public ActivityService getActivityService() {
-		return activityService;
-	}
 
-	public void setActivityService(ActivityService activityService) {
-		this.activityService = activityService;
-	}
 
 	public String index() {
 		HttpServletRequest request = StrutsParamUtils.getRequest();
